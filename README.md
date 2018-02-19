@@ -157,3 +157,5 @@ Use whatever method you prefer to `commit` these changes and `push` them to your
 
 Note that you're pushing all content, all organization files, and the Powerpoint cover construction file. All you have to do for new releases is add to what's already there. Also note that you're pushing the PDF itself. Why not? Then you have everything in one place.
 
+For an example of one of these projects, check out my repo [Life-After-Watson](https://github.com/viiateix/life-after-watson).
+
