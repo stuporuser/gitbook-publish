@@ -14,11 +14,14 @@ This installs RVM, Ruby 2.3, npm, and gitbook-cli. Obviously, you only do this o
 
 ```
 user@SpFx:~$ \curl -sSL https://get.rvm.io | bash -s stable --ruby
-user@SpFx:~$ rvm install ruby-2.3
-user@SpFx:~$ ruby -v
 
+user@SpFx:~$ rvm install ruby-2.3
+
+user@SpFx:~$ ruby -v
   ruby 2.3.4p301 (2017-03-30 revision 58214) [x86_64-darwin16]
+
 user@SpFx:~$ brew install npm
+
 user@SpFx:~$ npm install -g gitbook-cli
 ```
 
@@ -123,6 +126,7 @@ info: loading plugin "theme-default"... OK
 info: found 13 pages
 info: found 19 asset files
 info: >> generation finished with success in 3.2s !
+
 user@SpFx:/Volumes/SyncPart/Sync/Repos/CellRAT-UserGuide$ gitbook pdf . "CellRAT User Manual v2018-02-12.pdf"
 info: 7 plugins are installed
 info: 6 explicitly listed
@@ -136,7 +140,9 @@ info: found 13 pages
 info: found 19 asset files
 info: >> generation finished with success in 7.3s !
 info: >> 1 file(s) generated
+
 user@SpFx:/Volumes/SyncPart/Sync/Repos/CellRAT-UserGuide$ rm -rf _book
+
 user@SpFx:/Volumes/SyncPart/Sync/Repos/CellRAT-UserGuide$ ls
 CellRAT User Manual v2018-02-12.pdf                  Remote-End Mission Support.md
 Field-Charging.md                                    Remote-Exploit WiFi Networks on Objective.md
