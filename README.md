@@ -13,16 +13,16 @@ Prepare system with required applications
 This installs RVM, Ruby 2.3, npm, and gitbook-cli. Obviously, you only do this once for each system.
 
 ```
-user@SpFx:~$ \curl -sSL https://get.rvm.io | bash -s stable --ruby
+$ \curl -sSL https://get.rvm.io | bash -s stable --ruby
 
-user@SpFx:~$ rvm install ruby-2.3
+$ rvm install ruby-2.3
 
-user@SpFx:~$ ruby -v
+$ ruby -v
   ruby 2.3.4p301 (2017-03-30 revision 58214) [x86_64-darwin16]
 
-user@SpFx:~$ brew install npm
+$ brew install npm
 
-user@SpFx:~$ npm install -g gitbook-cli
+$ npm install -g gitbook-cli
 ```
 
 Write and organize your book
@@ -38,7 +38,7 @@ In other words, create your content. It doesn't have to be in specific order, bu
 Your repo's content will look much like this:
 
 ```
-user@SpFx:/PathOmitted/UserGuide$ ls *.md | grep -v SUMMARY
+/PathOmitted/UserGuide$ ls *.md | grep -v SUMMARY
 Field-Charging.md
 Field-During Event.md
 Field-Event End.md
@@ -106,15 +106,15 @@ Publish locally
 We'll finally use gitbook to generate the PDF. This is the easy part.
 
 ```
-user@SpFx:/PathOmitted/UserGuide$ gitbook build .
-user@SpFx:/PathOmitted/UserGuide$ gitbook pdf . "<title>.pdf"
-user@SpFx:/PathOmitted/UserGuide$ rm -rf _book
+/PathOmitted/UserGuide$ gitbook build .
+/PathOmitted/UserGuide$ gitbook pdf . "<title>.pdf"
+/PathOmitted/UserGuide$ rm -rf _book
 ```
 
 Here's the output. Note the PDF file at the end.
 
 ```
-user@SpFx:/Volumes/SyncPart/Sync/Repos/CellRAT-UserGuide$ gitbook build .
+/Volumes/SyncPart/Sync/Repos/CellRAT-UserGuide$ gitbook build .
 info: 7 plugins are installed
 info: 6 explicitly listed
 info: loading plugin "highlight"... OK
@@ -127,7 +127,7 @@ info: found 13 pages
 info: found 19 asset files
 info: >> generation finished with success in 3.2s !
 
-user@SpFx:/Volumes/SyncPart/Sync/Repos/CellRAT-UserGuide$ gitbook pdf . "CellRAT User Manual v2018-02-12.pdf"
+/Volumes/SyncPart/Sync/Repos/CellRAT-UserGuide$ gitbook pdf . "CellRAT User Manual v2018-02-12.pdf"
 info: 7 plugins are installed
 info: 6 explicitly listed
 info: loading plugin "highlight"... OK
@@ -141,9 +141,9 @@ info: found 19 asset files
 info: >> generation finished with success in 7.3s !
 info: >> 1 file(s) generated
 
-user@SpFx:/Volumes/SyncPart/Sync/Repos/CellRAT-UserGuide$ rm -rf _book
+/Volumes/SyncPart/Sync/Repos/CellRAT-UserGuide$ rm -rf _book
 
-user@SpFx:/Volumes/SyncPart/Sync/Repos/CellRAT-UserGuide$ ls
+/Volumes/SyncPart/Sync/Repos/CellRAT-UserGuide$ ls
 CellRAT User Manual v2018-02-12.pdf                  Remote-End Mission Support.md
 Field-Charging.md                                    Remote-Exploit WiFi Networks on Objective.md
 Field-During Mission.md                              Remote-Managing and Reconnecting to tmux Sessions.md
@@ -163,5 +163,5 @@ Use whatever method you prefer to `commit` these changes and `push` them to your
 
 Note that you're pushing all content, all organization files, and the Powerpoint cover construction file. All you have to do for new releases is add to what's already there. Also note that you're pushing the PDF itself. Why not? Then you have everything in one place.
 
-For an example of one of these projects, check out my repo [Life-After-Watson](https://github.com/viiateix/life-after-watson).
+For an example of one of these projects, check out my repo [Life-After-Watson](https://github.com/stuporuser/life-after-watson).
 
